@@ -1,0 +1,516 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+    /* overflow-y:hidden ; */
+}
+::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+}
+
+/* 💡 Extra Protection for Firefox and Edge */
+* {
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+}
+body{
+    background-color: black !important;
+}
+
+
+.nav-link:hover{
+    /* border: 2px solid green; */
+    color: rgb(191, 163, 124) !important;
+}
+.mycar img{
+    width: 80px;
+    height: 30px;
+}
+.myblack{
+    background-color: black;
+    /* border: 1px solid black; */
+    /* color: white; */
+}
+ .nav-link{
+    color: white !important;
+}
+.mybg1{
+    background-color: transparent;
+}
+.mycarousal img{
+ height: 550px;
+}
+.btn-light:hover{
+    background-color: transparent !important;
+    color: white !important;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 100000;
+}
+.mylogo img{
+
+filter: brightness(0) invert(1);
+opacity: 0.8;
+height: 100px;
+width: 100px;
+
+
+}
+
+.gcolor{
+    color: rgb(143, 124, 97);
+}
+.mylogo{
+/* white-space: nowrap; */
+animation-name: sample;
+animation-duration: 25s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+white-space: nowrap;
+flex-shrink: 0;
+gap: 70px;
+}
+
+
+@keyframes sample {
+    0%{
+       transform: translateX(0);
+    }
+
+    100%{
+       transform: translateX(-50%);}
+}
+.sec-2{
+    background-color: rgb(34, 34, 34) !important;
+}
+.mycard{
+    background-color:  rgb(34, 34, 34) !important ;
+    border: 1px solid rgb(229, 231, 235) ;
+    position: relative;
+}
+.mycard:hover{
+    border: 1px solid rgb(191, 163, 124) ;
+    transform: translateY(-3px);
+}
+.transparent-car{
+    color:rgb(191, 163, 124);
+font-size: 30px;
+position: absolute;
+width: 80px;
+border-radius:50%;
+height: 70px;
+border: 1px solid rgb(191, 163, 124);
+padding: 9px;
+top: 10px;
+left: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 10px;
+
+
+}
+.card-head{
+    margin-top: 20px;
+    /* margin-bottom: 20px; */
+}
+/* .mysplit{
+    /* background: #000; */
+.mybg{
+ background-color: rgb(34, 34, 34);
+}
+.splitingpart{
+    height: 100vh !important;
+    /* border: 2px solid black; */
+    position: relative;
+  
+   
+}
+.picsplit{
+        height: 100vh !important;
+
+}
+.split-p{
+position: absolute;
+bottom: 10px;
+}
+.picsplit img {
+  object-fit: cover !important;
+  height: 100vh !important;
+}
+.carousel-control-next, .carousel-control-prev {
+  z-index: 999 !important; /* Is se buttons text aur image se upar aa jayein ge aur click pakka detect hoga */
+}
+.mybg2 img{
+background-color: rgb(36, 35, 35);
+border-radius: 20px;
+}
+
+.mybg2{
+    padding: 9px;
+    border-radius: 20px;
+    border: 1px solid white;
+    /* margin-top: 10px; */
+}
+.bg3{
+    background-color: black;
+}
+.head{
+    font-weight: bold;
+}
+.para{
+    font-size: 10px;
+    
+}
+.purpose{
+    color: rgb(170, 170, 170);
+}
+.cardeffect:hover{
+    /* transition: 10s; */
+  background: radial-gradient(circle at 70% 50%, #ffffff 0%, #BFA37C 40%, #7d6548 75%) !important;
+
+    border-color: #BFA37C !important; /* Hover par border bhi gold ho jaye */
+  cursor: pointer;
+}
+.cardeffect:hover .purpose{
+    color: black;
+    font-weight: bold;
+}
+.cardeffect:hover .ourbtn{
+    background-color: rgb(61, 50, 34);
+}
+.ourcard{
+    
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 25px;
+}
+
+.papaourcard {
+    position: relative;
+    background: black;
+    height: auto !important;   /* 🎯 Fixed height hata kar auto kiya taake cards mobile par space le sakein */
+    padding-bottom: 80px !important; /* Button ko space dene ke liye neeche thodi padding di */
+}
+
+/* 🎯 INVENTORY BUTTON FIX: Badi screen par center karne ke liye absolute ko sahi handle karein */
+.apnabtn {
+    position: absolute;
+    bottom: 20px;
+    left: 50% !important;
+    transform: translateX(-50%) !important; /* Is se button poori screen ke perfect center mein rahega */
+}
+
+.apnabtn button{
+    width: 130px;
+    border-color: rgb(143, 118, 81); 
+    font-size: 12PX;
+}
+.apnabtn button:hover{
+    background-color: black !important ;
+    color: rgb(143, 118, 81) ;
+
+}
+
+.hello{
+  background-color: rgb(36, 35, 35);
+  
+}
+
+    .faq-item {
+    width: 75% !important; /* Badi screen par khud 75% ho jaye */
+}
+.hello-section {
+    display: block !important; /* Flexbox ka jhanjhat khatam karne ke liye */
+    position: relative !important;
+    clear: both !important;
+    z-index: 10 !important; /* Taake text pichli kisi cheez ke peeche na chupe */
+}
+
+.accordion-item {
+    position: relative !important;
+    display: block !important;
+}
+/* footer */
+/* --- Upgraded Attractive Footer Styling --- */
+.custom-footer {
+    background: linear-gradient(135deg, #111111 0%, #1a1a1a 100%); /* Flat black ki jagah subtle dynamic dark gradient */
+    color: #e0e0e0; /* Pure white (#fff) ki jagah soft premium white */
+    padding: 60px 0 20px 0;
+    font-family: 'Poppins', sans-serif;
+    border-top: 3px solid rgba(212, 175, 55, 0.4); /* Metallic Golden Top Border */
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.5); /* Top par shadow ta kah oopar walay section say alag dikhay */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 220px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+}
+
+/* Golden Accent Logos and Headings */
+.gold-text {
+    color: rgba(212, 175, 55, 0.4); 
+    text-shadow: 0 2px 4px rgba(212, 175, 55, 0.2); /* Gold text par halki chamak */
+}
+
+.footer-logo {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.footer-col h4 {
+    color: #F3E5AB; /* Soft Vanilla Gold heading jo text ko attractive banati hai */
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Main Paragraph and Info Text Description */
+.footer-col p {
+    font-size: 14px;
+    line-height: 26px;
+    color: #b3b3b3; /* Sleek Platinum Grey text jo parhnay mein bohot premium lagta hai */
+}
+
+/* Icons color in contact list */
+.footer-col p i {
+    color: rgba(212, 175, 55, 0.4); /* Contact info kay icons pure golden */
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+/* Links Styling */
+.footer-col ul li a {
+    color: #cccccc; /* Off-white links */
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: inline-block;
+}
+
+/* Hover Effect: Text turns Gold and shifts slightly right */
+.footer-col ul li a:hover {
+    color: rgba(212, 175, 55, 0.4);
+    transform: translateX(5px); /* Smooth sliding effect on hover */
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.4); /* Glow effect */
+}
+
+/* Premium Social Icons Buttons */
+.social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #222222;
+    color: #cccccc;
+    margin-right: 12px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 8px; /* Circular ki jagah modern squircle shape */
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    border: 1px solid #333333;
+}
+
+.social-links a:hover {
+    background-color: rgba(212, 175, 55, 0.4);
+    color: #111111;
+    transform: translateY(-5px); /* Floating effect */
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+}
+
+/* Bottom Copyright Bar */
+.footer-bottom {
+    text-align: center;
+    padding-top: 25px;
+    margin-top: 40px;
+    border-top: 1px solid #222222;
+    font-size: 13px;
+    color: #777777; /* Soft dark grey copyright font */
+}
+
+/* --- Mobile Responsiveness (425px and below) --- */
+@media (max-width: 425px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-col {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .footer-col ul li a:hover {
+        transform: none; /* Mobile par tilt effect band */
+    }
+}
+
+
+/*  */
+
+/* 📱 Jab screen 425px ya us se choti ho toh yeh lock apply hoga */
+@media (max-width: 425px) {
+    
+    /* 1. Poori website ke body aur main structure ko right side se lock kar do */
+    html, body {
+        overflow-x: hidden !important;
+        width: 100% !important;
+        position: relative;
+    }
+
+    /* 2. Aapka jo main layout container hai usko screen ke andar rakho */
+    .container, .container-fluid, .row {
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        overflow-x: hidden !important;
+    }
+    img.w-100.jioimg{
+       height: 100% !important;
+       object-position: center center !important;
+        object-fit: cover !important; 
+    }
+
+       #carouselExampleInterval, 
+    .carousel, 
+    .carousel-inner, 
+    .carousel-item {
+        height: auto !important; 
+        min-height: unset !important;
+    }
+
+    
+    .carousel-item img {
+        width: 100% !important;
+        height: 250px !important; 
+        object-fit: cover !important; 
+        background-color: black; 
+    }
+    .sec-2 .mycard{
+        width: 90% !important;
+    }
+    .papaourcard .hlocard{
+         width: 90% !important;
+    }
+    /* 3. Slider ya cards ki wajah se agar image bahar ja rahi ho */
+    /* img {
+        max-width: 100% !important;
+        height: auto !important;
+    } */
+    .mylogo img{
+    width: 50px;
+        height: 50px;
+    }
+}
+
+
+@media only screen and (max-width:768px){
+
+.ourcarousal{
+    height: 400px;
+    z-index: 0;
+}
+.ourslides {
+z-index: 100;
+position: relative;
+height: 200px;
+}
+.mylogo{
+    position: absolute;
+    bottom: 0;
+
+    /* border: 1px solid white; */
+}
+.pappa{
+   
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+}
+.papaourcard .ourcard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card1{
+   
+    /* border: 1px solid pink !important; */
+    /* z-index: 99999999; */
+    margin-left: auto;
+}
+.card2{
+    margin-right: auto;
+    /* margin-left: auto; */
+}
+.card3{
+    margin-left: auto;
+    margin-bottom: 25px;
+}
+.ourcard{
+    position: relative;
+}
+   .apnabtn {
+        position: static !important;
+        transform: none !important;
+        margin: 30px auto 0 auto !important;
+        display: block !important;
+        text-align: center !important;
+    }
+.hello{
+    display: block;
+}
+.faq-item{
+
+     width: 100% !important;
+}
+.responsecontainer p{
+    font-size: 12px;
+}
+.responsecontainer h1,
+.responsecontainer h2,
+.responsecontainer h3{
+
+
+   font-size: 16px;
+
+}
+
+
+}
+
+
+

@@ -1,0 +1,543 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+      /* work only nav bar copy and paste this  */
+body{
+    /* background: 5px 6px 23px 6px rgba(0,0,0,0.47); */
+     transition: all 0.3s ease;
+     background-color: rgb(247, 248, 252);
+
+
+}
+ul li{
+   list-style-type: none;
+   /* background-color: aqua; */
+   color: rgb(66, 77, 94);
+   font-size: 20px;
+}
+ul li:hover{
+    cursor: pointer;
+}
+ul li:hover{
+  transform: scale(1.15); /* Is se link 15% bada ho jayega click karne par */
+}
+.logo img:hover {
+  transform: scale(1.15); /* Is se link 15% bada ho jayega click karne par */
+}
+.logo img{
+    display: inline-block;
+    /* border: 2px solid black; */
+}
+li button {
+  background-color: #0b73b7; /* Bright aur attractive red/pink rang */
+  color: #ffffff;            /* Text ka rang safaid */
+  font-size: 13px;           /* Text ka size */
+  font-weight: 600;          /* Text ko thoda bold karne ke liye */
+  padding: 7px 24px;        /* Top/Bottom aur Left/Right ka gap (Size) */
+  border: none;              /* Default border hatane ke liye */
+  border-radius: 50px;       /* Pill-shape (corners bilkul gol) karne ke liye */
+  cursor: pointer;           /* Mouse le jaane par hand icon ke liye */
+  /* box-shadow: 0 4px 15px rgba(255, 71, 87, 0.3); Button ke niche halki shadow */
+  transition: all 0.3s ease;}
+  
+  li button:hover {
+  transform: translateY(-2px); /* Button thoda sa upar uthega */}
+
+/* 4. Active Effect (Jab button par click karein) */
+li button:active {
+  transform: translateY(1px); /* Click karne par button daba hua lagega */
+}
+ul{
+    display: flex;
+    gap: 50px;
+}
+.logo{
+    width:80px;
+}
+.logo img{
+    width: 100%;
+    height: 35px;
+    margin-left: 20px;
+}
+.navbar{
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 64px;
+    padding: 0 46px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+     background:rgb(247, 248, 252);
+    /* border: 2px solid black; */
+}
+@media only screen and(max-width:400px){
+    .navbar ul div{
+        width: 200px;
+    }
+}
+/* there all work done for navbar */
+
+
+/* There are gradien work which is reuseable  */
+
+/* .gradientpappa{ */
+    /* border: 2px solid black; */
+
+.capandtext img{
+    width: 22px;
+    height: 22px;
+    /* color: white !important; */
+}
+.gradient{
+    /* border: 2px solid black; */
+    max-width: 100%;
+    min-width: 300px;/* yah by defaul 100% lah tah han parent ki  */
+    padding: 40px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    flex-direction: column;
+    color: white;
+    /* box-shadow: 5px 6px 23px 6px rgba(0,0,0,0.47); */
+    gap: 15px;
+background: linear-gradient(90deg,rgba(77, 150, 219, 1) 0%, rgba(149, 191, 82, 1) 58%);
+}
+/* nav2 resuable */
+.nav2 img{
+    width: 16px;
+    height: 16px;
+
+}
+.nav2:hover{
+    
+  transform: translateY(-2px); /* Button thoda sa upar uthega */}
+
+.nav2{
+    display: flex;
+    align-items: center;
+  justify-content: center;
+ 
+    width: 200px;
+    height: 45px;
+    background: rgb(11, 115, 183);
+    color: white;
+  border-radius: 16px;
+    gap: 4px;
+    text-transform: uppercase;
+}
+.nav2 a{
+    text-decoration: none;
+    color: rgb(96, 85, 99);
+}
+.btnprimary{
+     background: white;
+      color:black
+}
+.btnprimary:hover{
+    background: rgba(224, 224, 219, 0.966);
+    cursor: pointer;
+}
+.nav2pappa{
+    display: flex;
+    width: 820px;
+    height: 70px;
+    justify-content: center;
+    gap: 20px;  
+    align-items: center;
+    /* border: 1px solid black; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    color: white;
+    padding: 4px;
+}
+/* reusable nav2 also khatam */
+/* resuable  option */
+
+    /* color: rgb(167, 167, 183);
+    background-color: #ffffff;  */
+
+
+.form {
+    /* width: 1100px ; */
+    margin-top: 20px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 30px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+}
+
+.formtext img {
+    width: 22px;
+    height: 22px;
+}
+
+.formtext {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: black;
+    row-gap: 4px;
+    column-gap: 10px;
+    width: 100%;
+}
+
+/* Dropdown ka size aur design */
+.form select.country {
+    width: 447px;
+    height: 56px;
+    border-radius: 10px;
+    padding: 0 15px; /* Andar ke text ko thoda gap dene ke liye */
+    color: rgb(167, 167, 183) !important; /* Ab yeh rang laazmi kaam karega */
+    border: 1px solid rgb(215, 220, 230); /* Border ka halka rang */
+}
+
+/* Dropdown ke upar waale labels ka rang */
+.form label.country, 
+.form label.country .andertext {
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    color: rgb(167, 167, 183) !important; /* Labels ka matlooba rang */
+}
+
+/* Hover effect */
+.form select.country:hover {
+    transform: translate(1.15px);
+}
+
+/* Dropdown ke andar waale options */
+.form select.country option {
+    background-color: white; 
+    color: rgb(167, 167, 183) !important;            
+    font-size: 16px;
+}
+
+/* Disabled option ka rang */
+.form select.country option:disabled {
+    color: #7f8c8d !important;            
+}
+
+
+
+
+
+/* input field resuable */
+.form {
+    margin-top: 20px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 30px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+}
+
+.formtext {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: black;
+    row-gap: 4px;
+    column-gap: 10px;
+    width: 100%;
+}
+
+.formtext img {
+    width: 22px;
+    height: 22px;
+}
+
+/* Label selector jo text ko input ke upar column mein layega */
+label.country {
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(81, 103, 144);
+    row-gap: 8px; /* Span text aur input field ke darmiyan halka gap */
+}
+
+/* Input fields par exact wahi sizing lagayi hai jo pehle select par thi */
+input.country {
+    width: 447px;
+    height: 56px;
+    border-radius: 10px;
+    border: 1px solid rgb(156, 166, 188); /* Input field ki clear boundary ke liye */
+    padding: 0 15px; /* Input text ko left border se thoda aage rakhne ke liye */
+    font-size: 16px;
+    color: black;
+    outline: none; /* Click karne par default chrome outline hatane ke liye */
+    box-sizing: border-box; /* Width aur height ko control mein rakhne ke liye */
+}
+
+/* Hover transform transition ke sath taake smoothly move ho */
+input.country:hover {
+    transform: translateX(1.15px);
+    transition: transform 0.2s ease;
+}
+
+/* Input ke andar jo placeholders hain un ka professional light grey color */
+input.country::placeholder {
+    color: rgb(156, 166, 188);
+    font-size: 16px;
+}
+/* text area */
+/* 1. Textarea ka main Parent Label */
+ .spantext{
+     
+    padding: 0 0 8px;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(81, 103, 144);
+    row-gap: 8px; 
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+
+/* 2. Textarea box (.text2) ki apni styling */
+textarea.text2 {
+    width:1000px ;
+    padding: 14px 16px;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid rgb(156, 166, 188);
+    padding: 15px;
+    font-size: 16px;
+    color: black;
+    outline: none; 
+    resize: none; 
+    box-sizing: border-box;}
+
+    textarea.text2::placeholder {
+    color: rgb(156, 166, 188);
+    font-size: 16px;
+    opacity: 1; /* Kuch browsers mein visibility ensure karne ke liye */
+}
+
+    
+    .kuchbhi{
+        display: flex;
+        justify-content: center;
+    }
+    select.source-select{
+        width: 900px;
+    }
+    /* checkbox */
+    .terms-list{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    div.shield{
+        margin-bottom: 20px;
+    }
+    .terms-item-text{
+        color: rgb(76, 85, 100);
+    }
+    .lastbtn{
+        width:900px ;
+    }
+    /* footer */
+    /* Footer ka Main Parent Wrapper */
+.smit-footer {
+    background-color: #222222; /* Dark background color */
+    color: #999999;           /* Text ka light grey color */
+    padding: 60px 0;
+    font-family: sans-serif;
+    width: 100%    !important;
+    box-sizing: border-box;
+}
+
+/* 4 Columns Container */
+.footer-container {
+    min-width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+    gap: 30px;
+}
+
+/* Individual Column Layout */
+.footer-col {
+    flex: 1;
+    min-width: 220px;
+}
+
+.intro-col {
+    flex: 1.5;
+}
+.fatherfooter{
+    width: 100% !important;
+}
+
+/* Logo Image Sizing */
+/* 1. Main Footer Wrapper */
+.smit-footer {
+    background-color: #222222; 
+    color: #999999;           
+    padding: 60px 0;
+    font-family: sans-serif;
+    width: 100%      !important;
+    box-sizing: border-box;
+    display: block; /* Ensure ke yeh full line block element rahe */
+}
+
+/* 2. Columns Flex Container */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row; /* Columns ko aamne samne rakhne ke liye */
+    flex-wrap: nowrap;   /* Items ko toot kar neeche girne se rokne ke liye */
+    justify-content: space-between;
+    padding: 0 20px;
+    gap: 40px; /* Columns ke darmiyan barabar gap */
+    box-sizing: border-box;
+}
+
+/* 3. Individual Columns Configuration */
+.footer-col {
+    display: block; /* Kisi bhi global flex design ko reset karne ke liye */
+    flex-basis: 22%; /* Har column ko barabar width di taake koi daba na sake */
+}
+
+.intro-col {
+    flex-basis: 34%; /* Logo aur address wale block ko thoda bada rakha */
+}
+
+/* Logo Broken Image Placeholder Text handling */
+.footer-logo img {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Text Paragraphs Styling */
+.footer-desc {
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+    color: #b3b3b3;
+}
+
+.contact-info p {
+    font-size: 14px;
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+/* Headings Styling */
+.footer-col h3 {
+    color: #ffffff; 
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 25px 0; /* Heading ke neeche gap */
+}
+
+/* 4. MAIN FIX FOR THE LIST: Jo daba ban raha tha usko theek kiya */
+.footer-col ul {
+    list-style: none !important; /* Bullets har haal mein khatam */
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important; /* Elements ko ek ke neeche ek laane ke liye mandatory line */
+    align-items: flex-start !important;
+    gap: 12px !important; /* Har word ke darmiyan upar-neeche ka gap */
+    background: none !important; /* Kisi bhi kism ka background color dabba khatam karne ke liye */
+}
+
+/* Individual Text Items inside list */
+.footer-col ul li {
+    font-size: 15px;
+    color: #999999;
+    background: none !important; /* Cyan background dabbe hatane ke liye step */
+    width: auto !important;     /* Size normal karne ke liye */
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    cursor: pointer;
+    white-space: nowrap; /* Text ko tootne se rokne ke liye */
+}
+
+/* Hover karne par text white ho jaye ga */
+.footer-col ul li:hover {
+    color: #ffffff;
+}
+.download{
+    background: white;
+    color: rgb(96, 85, 99);
+}
+.hato{
+    background-color: rgb(11, 115, 183);
+    color: black !important;
+}
+.warning{
+    color: red;
+}
+.download{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+      align-items: center;
+      color: black;
+      background:  rgb(247, 248, 252);
+}
+.download .head2{
+    margin-bottom: 15px;
+    /* border: 1px solid black; */
+}
+.super{
+    margin: 20px 0;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+}
+.cnic input{
+/* border: 1px  solid black; */
+width: 640px;
+
+}
+.downloadbtn{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+    width: 95%;
+
+}
+.dbtn{
+    width: 630px;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.hello12{
+    background: white;
+    /* width: 00px; */
+}
+.entryt{
+    /* border: 1px solid black; */
+    margin-top: 4px;
+    padding: 0;
+}

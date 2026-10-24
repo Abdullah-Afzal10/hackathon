@@ -1,0 +1,473 @@
+
+*{
+    margin: 0;
+box-sizing: border-box;
+    border: 0;
+     /* outline: 1px solid red !important; */}
+   
+html, body {
+    /* border: 2px solid yellow; */
+    width: 100% !important;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Yeh poori website ka faltu side scroll khatam kar dega */
+
+}
+/* 🌐 Pure Website par kisi bhi box, card ya element ki scrollbar ko hide karne ke liye */
+::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+}
+
+/* 💡 Extra Protection for Firefox and Edge */
+* {
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+}
+
+.graycolor{
+    color: rgb(226, 219, 210);
+}
+.button{
+    background-color: white;
+}
+.ournav{
+    background-color: #6851ff !important;
+}
+.ournav p{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.t-bold{
+    font-weight: bold;
+}
+.sizeset img{
+    width: 150px;
+    height: 29px;
+}
+.homemodule h1{
+    background: linear-gradient(106.43deg, #522fd4, #6bdcff 95.12%);
+        background-clip: text;
+  -webkit-text-fill-color: transparent;
+     -text-fill-color: transparent;
+     font-weight: 800;
+     text-align: center;
+}
+
+
+
+
+/* imp btn */
+.parentbtn{
+    /* background-color: black; */
+    width: 100%;
+     margin: 16px 0 24px;
+     justify-content: center;
+     align-items: center;
+     display: flex;
+     
+}
+
+.hello .chalo{
+    line-height: 10px;
+}
+.multibtn{
+       background-color: rgb(54, 51, 51);
+    width: 280px;
+    height: 70px;
+    padding: 6px;
+    text-align: center;
+    display: flex;
+    /* justify-content: center; */
+    backdrop-filter: blur(10px);
+    align-items: center;
+    position: relative;
+    transition:0.3;
+   /* border: 1px solid black;  */
+   
+    border-radius: 60px;
+   
+    
+    /* border: 2px solid rgba(255, 255, 255, 0.16);  */
+}
+
+.childbtn{
+        color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2;
+    /* width: calc(50% - 6px); */
+    width: 50%;
+    height: 58px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(54, 51, 51);
+    /* position: relative; */
+    /* z-index: 1; */
+     /* color: white; */
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    font-size: 16px;
+}
+ .childbtn.active{
+        background: linear-gradient(135deg, rgb(104, 81, 255), rgb(90, 69, 232));
+    box-shadow: rgba(104, 81, 255, 0.4) 0px 8px 25px;
+transform: translateX(0px);
+/* position: absolute;
+left: 6px; */
+     /* color: black; */
+    font-weight: bold;
+} 
+.childbtn:hover{
+    transform: translateY(-3px);
+}
+.para{
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    line-height: 22px;
+    font-weight: 500;
+}
+.b2blue{
+    background: linear-gradient(135deg, rgb(0, 168, 204), rgb(0, 151, 230));
+    box-shadow: rgba(0, 168, 204, 0.3) 0px 8px 25px;
+    text-transform: capitalize !important;
+    white-space: nowrap;
+    font-weight: 500;
+    text-align: center;
+    /* border: 1px solid black; */
+    
+}
+.fb2blue{
+display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    /* border: 1px solid black; */
+
+}
+.ourhead{
+    text-transform: capitalize;
+    font-size: 30px;
+    margin-top: 16px;
+    font-weight: bold;
+    text-align: center;
+   color:  rgb(59, 59, 204);
+}
+/* ziada btn  */
+.fmbtn button{
+    border: 1px solid ;
+    border-color: rgba(104, 81, 255, 0.5);
+    text-transform: capitalize;
+}
+.fmbtn{
+    
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 10px;
+/* white-space: nowrap; */
+}
+/* card  */
+.card4 img{
+    width: 102px;
+    height: 102px;
+    border-radius: 50px;
+margin: 0 auto;
+}
+.head0{
+    font-size: 18px;
+}
+.text{
+    font-size: 14px;
+    color:#c7d2fe;
+}
+.text0{
+    font-size: 13px;
+}
+.cpurpose{
+    text-align: center;
+}
+.muibox span{
+    font-size: 11px;
+    border: 1px solid black;
+     padding: 0 8px;
+     border-radius: 50px;
+     background-color: rgb(58, 58, 63);
+     color: white;
+      padding: 0 px5;
+     
+}
+.card{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;  
+    position: relative;  
+}
+.muibox{
+margin-bottom: 30px ;
+}
+.ucard div{
+    width: 100px;
+    height: 36px;
+    font-size: 9px;
+    /* border: 1px solid black; */
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6851ff;
+    font-weight: bold;
+    margin: 10px 0;
+    white-space: nowrap;
+}
+.ucard .cardc{
+    background-color: #1d1b1b;
+}
+.btncolor{
+    background-color: rgb(58, 58, 63);
+    width: 95%;
+   
+}
+.ucard{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+   
+
+}
+.cardcolor{
+    border: 1px solid goldenrod;
+    background-color: rgb(42, 46, 49);
+}
+.smallicn{
+    position: absolute;
+    top: 10px;
+    /* right: 3px; */
+    left: 3px;
+    background-color: rgb(255, 191, 28);
+    padding: 2px 4px;
+    font-size: 10px;
+    border-radius: 50px;
+}
+/* movable card */
+
+.pappaslide{
+    /* background-color: #2e2d2d; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* margin: 100px 0; */
+}
+
+.slidehead{
+    /* margin:5px solid black; */
+    font-weight: bold;
+    text-align: center;
+    /* margin-bottom: 40px; */
+}
+.colorwala{
+    color: #522fd4;
+}
+.color{
+    color: white;
+}
+
+.company-badge{
+    margin: 20px 2px !important ; 
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    display: inline;
+    justify-content: center;
+    /* align-items: center; */
+    
+    /* border: 1px solid black; */
+    padding: 5px 12px ;
+    border-radius: 50%;
+    background-color: #bdbdbd;
+}
+/* .cardr{
+    border: 1px solid white;
+} */
+.apnacard img{
+    height: 100px !important;
+    object-fit: cover;
+    width: 100%;
+    /* background-image: cover; */
+}
+.cardr{
+    display: flex !important;
+    flex-wrap: nowrap !important ;
+    overflow-x:auto !important;
+    z-index: 100 !important;
+  -webkit-overflow-scrolling: touch !important;
+}
+
+.purcard{
+    padding: 0 16px;
+    margin: 64px 0;
+    text-align: center;
+}
+.purmen{
+    display: flex;
+    justify-content: center;
+}
+.purrow{
+        box-shadow: 0 4px 40px #bdb2ff3d;
+            background: linear-gradient(#edebff, #fff0);
+    border: 1px solid #fff;
+    border-radius: 24px;
+    box-sizing: border-box;
+}
+.textm{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    /* line-height: 0px; */
+}
+.mybimg img{
+    /* border: 3px solid purple; */
+   max-width: 100%;
+}
+/* highly movable person */
+.profiles ,.onlymov{
+    margin-top: 30px;
+display: flex;
+width:max-content ;
+gap: 8px;
+align-items: center;
+animation-name: movable;
+animation-duration: 25s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+/* animation-direction: alternate; */
+}
+.profiles1{
+    margin-top: 10px;
+    display: flex;
+width:max-content ;
+gap: 8px;
+align-items: center;
+animation-name: movable1;
+animation-duration: 25s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction: reverse;
+}
+.pro1{
+    /* margin-top: 20px; */
+      flex-shrink: 0 !important;
+     border-radius: 12px 12px 12px 0px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    border: 1px solid rgb(224, 224, 224);
+   white-space: nowrap;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    padding: 8px 12px;
+}
+.pro1 img{
+    width: 34px;
+    height: 34px;
+     border-radius: 50px;
+}
+.pro1 h6{
+    font-size: 14px;
+    margin-left: 10px;
+}
+/* footer */
+/* Footer Custom Color Palette */
+.footer-bg {
+    background-color: #522fd4 !important; /* Exact Hiring Mine Dark Purple */
+}
+
+/* Typography styles match */
+.font-logo {
+    font-family: sans-serif;
+    letter-spacing: -0.5px;
+}
+
+/* Hover effects for clean interactivity */
+.footer-links a:hover, 
+.footer-socials a:hover {
+    color: #ffffff !important;
+    opacity: 1 !important;
+    transition: 0.2s ease-in-out;
+}
+.bpapa{
+    display: flex;
+}
+.anah{
+    background-image: url(./assest/1777718090628-hafizshoaibraza180-profilePicture.png);
+    background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+
+/* Small text adjustment for copyright specs */
+.fs-7 {
+    font-size: 0.85rem !important;
+}
+
+
+
+@keyframes movable1 {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+
+}
+
+@keyframes movable {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
+
+@media (max-width: 425px) {
+    
+    
+    html, body {
+        overflow-x: hidden !important;
+        width: 100% !important;
+        position: relative;
+    }
+   .row.cardr {
+        overflow-x: auto !important; /* Sirf is specific row ka hidden hataya */
+    }
+    
+  
+    .cardr > .apnacard {
+    flex-shrink: 0 !important;
+     flex-basis: 85% !important;
+}
+    img {
+        max-width: 100% !important;
+        /* height: auto !important; */
+    }
+    .apnacard img{
+        height: 100%;
+    }
+    .parentbtn{
+       width: 100%;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}

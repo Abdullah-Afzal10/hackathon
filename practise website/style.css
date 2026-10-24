@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    
+}
+.ti-cursor {
+  color: #808080 !important; /* Yeh gray color ka code hai */
+}
+.typeauto{
+    font-family: fantasy;
+    margin: 0px 0px 24px;
+   
+
+}
+.pd{
+    padding: 120px 15px;
+}
+.work{
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #818385;
+}
+.butnstyle button{
+    font-size: 14px !important;
+    font-family: fantasy;
+
+}
+
+
+
+.cardstyle{
+    width: 120px;
+    height: 117px;
+}
+.portfolio-card{
+    position: relative ;
+    margin-bottom: 20px ;
+   min-height: 150px;
+    max-height: 400px !important;
+    width: 98%;
+    aspect-ratio: 1 / 1;
+    
+    /* margin-left: 20px; */
+    /* margin-right: 80px; */
+
+    /* border: 1px solid black; */
+
+
+    background-image: url(./assest/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /* background-clip: unset; */
+    border-radius: 8px;
+}
+.portfolio-card:not(.portfolio-card1 ,.portfolio-card2,.portfolio-card3 ,.portfolio-card4,.portfolio-card5){
+    background-image: url(./assest/3.jpg);
+}
+.portfolio-card1{
+    background-image: url(./assest/4.jpg);
+}
+.portfolio-card2{
+    background-image: url(./assest/1.jpg);
+}
+.portfolio-card3{
+    background-image: url(./assest/5.jpg);
+}
+.portfolio-card4{
+    background-image: url(./assest/6.jpg);
+}
+.portfolio-card5{
+    background-image: url(./assest/7.jpg);
+}
+.portfolio-card .overlaybtn{
+    position: absolute;
+    inset: 0;
+     background: rgba(157, 160, 163, 0.8);
+     display: flex;
+     flex-direction: column;
+     justify-content: end;
+     opacity: 0;
+     padding: 30px;
+    
+        transition:  0.4s ease-in-out;
+}
+.overlaybtn h2 , .overlaybtn p{
+    background: #565454;
+    font-size: 90%;
+    color: #000;
+    padding: 5px 15px;
+    font-weight: bold;
+     border-radius: 6px 5px 0px 6px;
+    width: fit-content;
+
+}
+.overlaybtn p{
+    font-weight: 100;
+}
+.portfolio-card:hover .overlaybtn{
+    opacity: 1;
+    border-radius: 5px;
+}
+.pappatext h2 {
+    font-weight: bold;
+    font-size: 40px;
+}
+.pappatext p{
+color: #818385;
+}
+/* Black background setting */
+footer.bg-black {
+    background-color: #000000 !important;
+}
+
+/* Icons ka base color (Halka grey jaisa pic mein hai) */
+.footer-icon-link {
+    color: #888888 !important;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover karne par bright white glow and smooth scale animation */
+.footer-icon-link:hover {
+    color: #ffffff !important;
+    transform: translateY(-2px); /* Icon halka sa upar uthega professional look ke liye */
+}
+
+
+
+
+@media only screen and  (min-width: 992px) {
+    /* Hover par dropdown smoothly display hoga */
+    .navbar .nav-item.dropdown:hover .dropdown-menu {
+        display: block !important;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    /* Bilkul chota aur light-weight animation setup */
+    .navbar .dropdown-menu {
+        display: block !important;
+        opacity: 0;
+        visibility: hidden;
+        margin-top: 2px !important; /* Bilkul chota sa gap */
+        
+        /* Sirf 5px niche se upar slide hoga (boht subtle aur chota effect) */
+        transform: translateY(5px); 
+        
+        /* Fast aur clean transition time */
+        transition: opacity 0.2s ease-in-out, transform 0.9s ease-in-out;
+    }
+}
+@media  only screen  and ( min-width:768px){
+    .customhead{
+        font-size:60px !important ;
+    }
+    .custompara{
+        font-size: 19px !important;
+    }
+    
+}
